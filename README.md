@@ -35,6 +35,9 @@ https://fish-species-classification.herokuapp.com/
 
 Please review the requirements.txt file to see all the tools and their versions.
 
+### Specify a Python Version:
+The Python app uses the python-3.7.13 runtime version.
+
 ### ML Model:
 
 The repo contains a jupyter notebook -> "Heroku_JugnuShefin.ipynb".
