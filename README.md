@@ -48,3 +48,5 @@ A model is already trained and used currently for prediction -> "fish_classifier
 The model was trained using "RandomForestClassifier" and obtained an accuracy score of 80 %.
 
 The model is loaded when the flask server goes up.
+
+Thanks.
