@@ -26,7 +26,7 @@ The Procfile in the repo, facilitates the deployment process.
 
 The deployed application can be accessed here, 
 
-https://fish-species-predict-demo.herokuapp.com/
+https://fish-species-classification.herokuapp.com/
 
 ### Main tools used:
 
