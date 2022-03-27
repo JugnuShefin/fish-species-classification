@@ -1,53 +1,54 @@
 # Fish Species Prediction
 
-The goal of the project is to build a web application that exhibts the fish species when a set of features are prodvide as input.
+The goal of the project is to build a web application that outputs the fish species when a set of features are provided as input.
 
-The dataset contains features such as "weight", "length1", "length2", "length3", "height" and "width" and 7 species of fish.
+Features:
+- weight
+- length1
+- length2
+- length3
+- height
+- width
 
-Here is the link to the dataset. https://www.kaggle.com/aungpyaeap/fish-market
+Link to dataset: https://www.kaggle.com/aungpyaeap/fish-market
 
 ### Installation:
 
-    1. Clone/Download the repo to my local.
-    2. Create a virtual environment (this application is built and tested on Python 3.7)
-    3. Run the requirements.txt (pip install -r requirements.txt)
+    1. Clone the repo to the local.
+    2. Create a virtual environment.
+    3. Run the requirements.txt file to install the dependencies.
 
-### Running the application:
+### Application run:
  
-    1. After the environment is setup, Run main.py.
-    2. A flask server will be running and a link to the webpage will be the output. Go to that link.
-    3. Insert necessary values for the fields and click Predict.
+    1. Run main.py.
+    2. Go to the link provided in output.
+    3. Insert necessary values for prediction.
+
+### Main tools:
+
+* flask - Web framework
+* XGBoost - Classification algorithm
+* scikit-learn - Machine Learning library
+
+### Python runtime version:
+python-3.7.13
 
 ### Deployment:
 
-The application is deployed on Heroku (cloud Platform as a Service).
+The application is deployed on Heroku (Platform as a Service).
 
-The Procfile in the repo facilitates the deployment process.
+The Procfile facilitates the deployment process and runtime file creates the specified python environment.
 
-The deployed application can be accessed here, 
+The deployed application can be accessed here. https://fish-species-classification.herokuapp.com/
 
-https://fish-species-classification.herokuapp.com/
+### Model:
 
-### Main tools used:
+Model is trained using "Heroku_JugnuShefin.ipynb" file.
 
-* [flask](https://flask.palletsprojects.com/en/1.1.x/) - Web framework
-* [scikit-learn](https://scikit-learn.org/0.22/getting_started.html) - Machine Learning library
+Dataset used for training is "Fish.csv".
 
-Please review the requirements.txt file to see all the tools and their versions.
-
-### Specify a Python Version:
-The Python app uses the python-3.7.13 runtime version.
-
-### ML Model:
-
-The repo contains a jupyter notebook -> "Heroku_JugnuShefin.ipynb".
-
-This notebook can be used to train the model.
-
-The dataset is also present in the repo -> "Fish.csv".
-
-A model is already trained and used currently for prediction -> "model.pkl".
+An already trained model, "model.pkl", is uploaded in the repo.
 
 The model was trained using "XGBClassifier" and obtained an accuracy score of 77.5 %.
 
-The model is loaded when the flask server goes up.
+The model is loaded when the flask service comes up.
